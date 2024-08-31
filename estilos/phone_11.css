@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+header, footer {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.ed-item {
+    padding: 20px;
+}
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.back-button:hover {
+    background-color: #0056b3;
+}
+.phone-3d {
+    perspective: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.phone-container {
+    width: 200px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 1s;
+}
+.phone-container:hover {
+    transform: rotateY(180deg);
+}
+.phone-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    backface-visibility: hidden;
+}
+.phone-front {
+    transform: rotateY(0deg);
+}
+.phone-back {
+    transform: rotateY(180deg);
+}
+.phone-image {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.section {
+    margin-bottom: 40px;
+}
